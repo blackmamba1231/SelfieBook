@@ -3,7 +3,7 @@ import User1 from "@/models/user";
 import Account1 from "@/models/account";
 import { NextRequest, NextResponse } from "next/server";
 import bcryptjs from "bcryptjs";
-import nodemailer from 'nodemailer';
+
 
 connect();
 
