@@ -1,5 +1,4 @@
 import { connect } from "@/dbConfig/dbConfig";
-import { stat } from "fs";
 import { NextResponse } from "next/server";
 
 export async function GET() {

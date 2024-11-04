@@ -1,9 +1,8 @@
 import User1 from "@/models/user";
-import { JsonWebTokenError } from "jsonwebtoken";
 import { NextRequest, NextResponse } from "next/server";
 import bcryptjs from 'bcryptjs'
 import jwt from 'jsonwebtoken';
-import { sign, verify } from 'jsonwebtoken';
+
 import { connect } from "@/dbConfig/dbConfig";
 connect();
 export async function POST(req: NextRequest) {

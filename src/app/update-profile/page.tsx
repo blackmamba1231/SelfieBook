@@ -9,7 +9,6 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Upload, ArrowLeft } from "lucide-react"
 import axios from 'axios'
 import { useRouter } from 'next/navigation'
-import { CldImage } from 'next-cloudinary';
 
 export default function UpdateProfilePage() {
   const [avatarFile, setAvatarFile] = useState<File | null>(null)

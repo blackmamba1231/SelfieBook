@@ -7,11 +7,9 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
-import { cn } from "@/lib/utils"
 import axios from "axios"
 import { useRouter } from "next/navigation"
-import { Router } from "lucide-react"
-import { set } from "mongoose"
+
 
 export default function SignupPage() {
   const [isLoading, setIsLoading] = useState<boolean>(false)

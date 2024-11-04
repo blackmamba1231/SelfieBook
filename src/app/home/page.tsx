@@ -3,17 +3,16 @@
 import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import  Textarea  from "@/components/ui/textarea"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+import { Card } from "@/components/ui/card"
+
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { MessageCircle, User, PlusCircle, Heart, MessageSquare, Bookmark, Moon, Sun, LogOut, Search } from "lucide-react"
+import { MessageCircle, User, Bookmark, Moon, Sun, LogOut, Search } from "lucide-react"
 import { useRouter } from 'next/navigation'
 import { House } from 'lucide-react';
 import { Bell } from 'lucide-react';
@@ -21,7 +20,7 @@ import { Bell } from 'lucide-react';
 import axios from 'axios'
 
 export default function Home() {
-    const [page, setPage] = useState("home")
+  
     const [isDarkMode, setIsDarkMode] = useState(false)
     const router = useRouter(); 
     const handleLogout = async ()=> {

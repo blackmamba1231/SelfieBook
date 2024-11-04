@@ -1,12 +1,12 @@
 import { connect } from "@/dbConfig/dbConfig";
-import User1 from "@/models/user";
+
 import Account1 from "@/models/account";
 import { NextRequest, NextResponse } from "next/server";
 import bcryptjs from "bcryptjs";
 import nodemailer from 'nodemailer';
 import speakeasy from 'speakeasy';
 import { z } from "zod";
-import { Verified } from "lucide-react";
+
 
 connect();
 
