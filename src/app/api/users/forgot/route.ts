@@ -6,13 +6,7 @@ import bcryptjs from "bcryptjs";
 import nodemailer from 'nodemailer';
 
 connect();
-const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: process.env.EMAIL,
-        pass: process.env.EMAIL_PASSWORD,
-    },
-});
+
 
 export async function POST(request: NextRequest) {
     await connect();

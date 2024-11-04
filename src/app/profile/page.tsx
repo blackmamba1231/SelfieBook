@@ -8,6 +8,7 @@ import { MessageCircle, Heart, Bookmark, ArrowLeft } from "lucide-react"
 import axios from "axios"
 import { useRouter } from "next/navigation"
 import { useEffect , useState } from "react"
+import Image from 'next/image'
 
 
 // Mock user data
@@ -118,7 +119,7 @@ export default function ProfilePage() {
             {user.posts.map((post) => (
               <Card key={post.id} className="overflow-hidden">
                 <CardHeader className="p-0">
-                  <img src={post.image} alt={`Post ${post.id}`} className="w-full h-48 object-cover" />
+                  <Image src={post.image} alt={`Post ${post.id}`} className="w-full h-48 object-cover" />
                 </CardHeader>
                 <CardContent className="p-2">
                   <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400">

@@ -17,6 +17,7 @@ export async function GET() {
         return response;
     }
     catch(error : unknown){
+        console.log(error)
         return Response.json(
             {status: 500}
         )
