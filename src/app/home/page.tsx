@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card } from "@/components/ui/card"
@@ -30,7 +30,7 @@ export default function ResponsivePage() {
   }
 
   const handleLogout = () => {
-    // Implement logout logic here
+    
     console.log("Logging out...")
   }
 
