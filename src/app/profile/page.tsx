@@ -1,5 +1,5 @@
 "use client"
-import React, { use } from 'react'
+import React  from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
@@ -15,14 +15,21 @@ import { useEffect , useState } from "react"
 
 
 export default function ProfilePage() {
-    const [uniqueID, setUniqueID] = useState<any>("")
-    const [avatar, setAvatar] = useState<any>("")
-    const [bio, setBio] = useState<any>("")
-    const [followers, setFollowers] = useState<any>("0")
-    const [following, setFollowing] = useState<any>("0")
-    const [posts, setPosts] = useState<any[]>([
-    
-    ])
+  type Post = {
+    id: string;
+    content: string;
+    image: string;
+    likes: number;
+    comments: string[];
+    // add other fields as needed
+  };
+  
+  const [uniqueID, setUniqueID] = useState<string>(""); // Unique identifier as a string
+  const [avatar, setAvatar] = useState<string>(""); // Avatar URL as a string
+  const [bio, setBio] = useState<string>(""); // Bio text as a string
+  const [followers, setFollowers] = useState<number>(0); // Followers count as a number
+  const [following, setFollowing] = useState<number>(0); // Following count as a number
+  const [posts, setPosts] = useState<Post[]>([]);
     const router = useRouter();
     async function getUser() {
         const response = await axios.post("/api/users/profile", { userId: localStorage.getItem("userId") });
@@ -132,7 +139,7 @@ export default function ProfilePage() {
         <TabsContent value="saved">
           <div className="text-center py-8">
             <Bookmark className="w-12 h-12 mx-auto mb-4 text-gray-400" />
-            <p className="text-gray-600 dark:text-gray-400">Only you can see what you've saved</p>
+            <p className="text-gray-600 dark:text-gray-400">Only you can see what you have saved</p>
           </div>
         </TabsContent>
       </Tabs>

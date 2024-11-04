@@ -4,11 +4,7 @@ import Account1 from "@/models/account";
 import { NextRequest, NextResponse } from "next/server";
 import bcryptjs from "bcryptjs";
 import nodemailer from 'nodemailer';
-import speakeasy from 'speakeasy';
-import { z } from "zod";
-import { Verified } from "lucide-react";
-import crypto from 'crypto';
-import jwt from "jsonwebtoken";
+
 connect();
 const transporter = nodemailer.createTransport({
     service: 'gmail',

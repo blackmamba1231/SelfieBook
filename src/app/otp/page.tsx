@@ -46,7 +46,8 @@ export default function OtpVerificationPage() {
       } else {
         setError("Invalid OTP. Please try again.")
       }
-    } catch (error) {
+    } catch (_error) {
+      console.log(_error)
       setError("An error occurred. Please try again.")
     } finally {
       setIsLoading(false)
@@ -113,7 +114,7 @@ export default function OtpVerificationPage() {
         </CardContent>
         <CardFooter>
           <p className="px-8 text-center text-sm text-muted-foreground">
-            Didn't receive the code?{" "}
+           Didn&apos;t receive the code?{" "}
             <button
               className="underline underline-offset-4 hover:text-primary"
               onClick={async () => {

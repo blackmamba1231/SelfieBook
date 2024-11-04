@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription,  CardHeader, CardTitle } from "@/components/ui/card"
 import { Home, MessageCircle, User, PlusCircle, Heart, MessageSquare, Share2 } from "lucide-react"
 import Link from "next/link"
 
@@ -144,7 +144,7 @@ export default function SocialMediaLanding() {
                           </Avatar>
                           <div className="ml-3 flex-1">
                             <p className="text-sm font-medium">Jane Smith</p>
-                            <p className="text-xs text-muted-foreground truncate">Hey, how's it going?</p>
+                            <p className="text-xs text-muted-foreground truncate">Hey, how&apos;s it going?</p>
                           </div>
                           <p className="text-xs text-muted-foreground">5m</p>
                         </div>
@@ -209,7 +209,7 @@ export default function SocialMediaLanding() {
                         <div className="space-y-4">
                           <div className="space-y-2">
                             <label htmlFor="post-content" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-                              What's on your mind?
+                            What&apos;s on your mind?
                             </label>
                             <Input id="post-content" placeholder="Write your post here..." />
                           </div>
