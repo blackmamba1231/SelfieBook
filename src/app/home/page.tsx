@@ -93,22 +93,22 @@ export default function ResponsivePage() {
         <main className='container mx-auto py-3 px-4'>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
             <div className='md:sticky md:top-20 h-auto md:h-48 py-4'>
-              <Card className='h-full rounded-lg p-4 w-full md:w-2/3 grid grid-cols-1 gap-2'>
+              <Card className='text-black h-full rounded-lg p-4 w-full md:w-2/3 grid grid-cols-1 gap-1'>
                 <Button 
-                  className='w-full bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-black dark:text-white flex justify-start items-center space-x-2'
+                  className='w-full bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-zinc-950 dark:text-white flex justify-start items-center space-x-2'
                   onClick={() => router.push('/home')}
                 >
                   <House className='w-5 h-5' />
                   <span>Home</span>
                 </Button>
                 <Button 
-                  className='w-full bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-black dark:text-white flex justify-start items-center space-x-2'
+                  className='w-full bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-zinc-950 dark:text-white flex justify-start items-center space-x-2'
                 >
                   <Bell className='w-5 h-5' />
                   <span>Notifications</span>
                 </Button>
                 <Button 
-                  className='w-full bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-black dark:text-white flex justify-start items-center space-x-2'
+                  className='w-full bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-zinc-950 dark:text-white flex justify-start items-center space-x-2'
                 >
                   <Bookmark className='w-5 h-5' />
                   <span>Bookmarks</span>
