@@ -51,9 +51,7 @@ export default function ResponsivePage() {
       document.documentElement.classList.remove('dark')
     }
   }, [isDarkMode])
-  const getposts = async () => {
-    console.log("Getting posts...")
-  }
+  
   const handleLike = (id: number) => {
     console.log(`Liked post with ID: ${id}`)
   }
@@ -65,6 +63,7 @@ export default function ResponsivePage() {
   }
   const handleCreatePost = () => {
     console.log("Posting...")
+    setPosts([...posts, { id: posts.length + 1,author: "Random", avatar: "/placeholder-avatar-3.jpg",content: newPostContent, likes: 0, comments: 0, bookmarks: 0 }])
   }
   const handleLogout = () => {
     
